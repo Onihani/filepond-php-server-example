@@ -8,7 +8,7 @@
 
   function writeJsonFile ($file_content, $filePath = DATABASE_FILE) {
     $fp = fopen($filePath, 'w');
-    fwrite($fp, json_encode($file_content), JSON_PRETTY_PRINT);
+    fwrite($fp, json_encode($file_content));
     fclose($fp);
   }
 
